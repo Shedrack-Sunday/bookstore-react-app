@@ -13,7 +13,6 @@ const Book = (props) => {
 };
 
 Book.propTypes = {
- 
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
 };
