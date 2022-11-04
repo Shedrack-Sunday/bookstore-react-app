@@ -1,4 +1,4 @@
- /* eslint-disable */
+/* eslint-disable */
 import React, { useState } from 'react';
 
 const InputForm = (props) => {
