@@ -30,5 +30,4 @@ InputForm.propTypes = {
   setBooks: PropTypes.func.isRequired,
 };
 
-
 export default InputForm;
