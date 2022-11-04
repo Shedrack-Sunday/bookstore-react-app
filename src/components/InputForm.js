@@ -1,5 +1,5 @@
-/* eslint-disable */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const InputForm = (props) => {
   const { setBooks, books } = props;
@@ -24,5 +24,11 @@ const InputForm = (props) => {
     </form>
   );
 };
+
+InputForm.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  setBooks: PropTypes.func.isRequired,
+};
+
 
 export default InputForm;
