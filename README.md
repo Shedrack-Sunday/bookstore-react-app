@@ -1,3 +1,20 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+## Bookstore React
+
+> MVP version of a Bookstore that allows you to: Display a list of books. Add a book. Remove a selected book. Built with React, Linters and Tailwind CSS
+
+
+## Built With
+- React
+- npm
+- CSS
+
+
+## Live Demo
+N/A
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +85,41 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Prerequisites
+- Having an IDE .
+- Having Git installed and configured.
+- Javascript knowledge
+
+### Setup
+- Clone the repository using Git.
+- Open the project folder in your IDE.
+- Get the dependecies by running `npm install`.
+
+## Authors
+
+👤 *Author*
+
+- GitHub: [@Shedrack-Sunday](https://github.com/Shedrack-Sunday)
+- Twitter: [@DeleSundayS](https://twitter.com/Shedrack-Sunday)
+- LinkedIn: [Shedrack-Sunday](https://linkedin.com/in/Shedrack-Sunday)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
