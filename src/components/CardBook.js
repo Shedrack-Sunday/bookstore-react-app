@@ -94,7 +94,6 @@ const Spinner = styled.div`
 `;
 
 const CardBook = (props) => {
-  
   const {
     id, category, author, title,
   } = props;
