@@ -94,7 +94,7 @@ const Spinner = styled.div`
 `;
 
 const CardBook = (props) => {
-  // prettier-ignore
+  
   const {
     id, category, author, title,
   } = props;

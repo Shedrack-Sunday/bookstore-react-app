@@ -21,7 +21,7 @@ function Books() {
             key={book.id}
             id={book.id}
             title={book.title}
-            author="Suzanne Collins"
+            author="Shedrack Sunday"
             category={book.category}
           />
         ))
