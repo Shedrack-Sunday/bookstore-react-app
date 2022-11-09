@@ -2,7 +2,7 @@
 
 ## Bookstore React
 
-> MVP version of a Bookstore that allows you to: Display a list of books. Add a book. Remove a selected book. Built with React, Linters and Tailwind CSS
+> A Bookstore App that allows you to Display a list of books. Add a book. Remove a selected book. Built with React, Linters and Tailwind CSS
 
 
 ## Built With
