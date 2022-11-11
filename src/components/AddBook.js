@@ -69,6 +69,7 @@ function AddBook() {
     const newBook = {
       item_id: uuidv4(),
       title,
+      author: 'Jay shetty',
       category,
     };
     dispatch(addBook(newBook));
