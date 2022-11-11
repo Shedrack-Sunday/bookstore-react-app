@@ -1,3 +1,6 @@
+/* eslint-disable */
+import { createAsyncThunk } from '@reduxjs/toolkit';
+
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const GET_CURRENT_API = 'bookStore/books/GET_CURRENT_API';
@@ -10,6 +13,42 @@ const initialState = {
   status: 'Idle',
   books: {},
 };
+
+//  CreatAyncThunk Implimentation
+ /* const addbk = createAsyncThunk(ADDBOOK, async (obj) => {
+  const url =
+    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/0ePu6tv5E4TBgiHo9yos/books';
+  await fetch(url, {
+    method: 'POST',
+    headers: {
+      'content-Type': 'application/json',
+    },
+    body: JSON.stringify(obj),
+  });
+});
+
+ const getbook = createAsyncThunk(GETBOOK, async () => {
+  const url =
+    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/0ePu6tv5E4TBgiHo9yos/books';
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: {
+      'content-Type': 'application/json',
+    },
+  });
+  const result = await response.json();
+});
+
+ const remBook = createAsyncThunk(REMBOOK, async (id) => {
+  const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/0ePu6tv5E4TBgiHo9yos/books${id}`;
+  await fetch(url, {
+    method: 'DELETE',
+    headers: {
+      'content-Type': 'application/json',
+    },
+    body: JSON.stringify({ item_id: id }),
+  });
+}); */
 
 export const getApi = async (dispatch) => {
   dispatch({ type: GET_CURRENT_API });
