@@ -4,8 +4,7 @@ const GET_CURRENT_API = 'bookStore/books/GET_CURRENT_API';
 const GET_CURRENT_API_SUCCESS = 'bookStore/books/GET_CURRENT_API_SUCCESS';
 const GET_CURRENT_API_FAILURE = 'bookStore/books/GET_CURRENT_API_FAILURE';
 const API = `
-  https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/0ePu6tv5E4TBgiHo9yos/books/
-`;
+  https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/0ePu6tv5E4TBgiHo9yos/books`;
 
 const initialState = {
   status: 'Idle',
@@ -35,10 +34,7 @@ export const removeBook = (payload) => async (dispatch) => {
 export const addBook = (newBook) => async (dispatch) => {
   const response = await fetch(API, {
     method: 'POST',
-    mode: 'cors',
     body: JSON.stringify(newBook),
-    cache: 'no-cache',
-    credentials: 'same-origin',
     headers: {
       'Content-Type': 'application/json',
     },
