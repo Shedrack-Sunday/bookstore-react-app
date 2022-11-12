@@ -91,10 +91,10 @@ const Spinner = styled.div`
   border-bottom: 5px solid #e8e8e8;
   border-radius: 50%;
 `;
-
-const CardBook = (props) => {
+/* eslint-disable-next-line */
+const CardBook = (props) => { 
   const {
-    id, category, author, name,
+    id, category = 'Action', author, name,
   } = props;
 
   const dispatch = useDispatch();
@@ -122,13 +122,13 @@ const CardBook = (props) => {
       <Container row>
         <Container row>
           <Spinner />
-          <Container justifyCenter>
+          <Container style={{ marginRight: '5rem' }} justifyCenter>
             <h2 style={{ margin: 0 }}>64%</h2>
             <LightFont style={{ margin: 0 }}>Completed</LightFont>
           </Container>
         </Container>
-        <Container style={{ marginLeft: '1rem' }}>
-          <LightFont>CURRENT CHAPTER</LightFont>
+        <Container style={{ marginLeft: '2rem' }}>
+          <LightFont style={{ marginBottom: '0.5rem' }}>CURRENT CHAPTER</LightFont>
           <h3 style={{ margin: '0 0 1rem 0' }}>Chapter 17</h3>
           <Button primary>UPDATE PROGRESS</Button>
         </Container>
