@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import AddBook from './AddBook';
 import CardBook from './CardBook';
-import { selectBooks, getApi } from '../redux/books/books';
 
 const Container = styled.div`
   display: flex;
@@ -12,26 +11,18 @@ const Container = styled.div`
 `;
 
 function Books() {
-  const books = useSelector(selectBooks);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getApi);
-  }, []);
+  const books = useSelector((state) => state.books);
   return (
     <Container>
-      {books ? (
-        Object.keys(books).map((book) => (
-          <CardBook
-            key={book}
-            id={book}
-            title={books[book][0].title}
-            author="Shedrack Sunday"
-            category={books[book][0].category}
-          />
-        ))
-      ) : (
-        <h1>Add new Book!</h1>
-      )}
+      {books.map((book) => (
+        <CardBook
+          key={book.item_id}
+          id={book.item_id}
+          name={book.title}
+          author="Shedrack Sunday"
+          category={books.category}
+        />
+      ))}
       <AddBook />
     </Container>
   );
