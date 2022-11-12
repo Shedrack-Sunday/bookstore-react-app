@@ -18,7 +18,7 @@ const WrapperCardBook = styled.div`
   border-radius: 4px;
   border: solid 1px #e8e8e8;
 `;
-/* prettier-ignore */
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -32,7 +32,6 @@ const Container = styled.div`
       justify-content: space-around;
     `}
 `;
-/* prettier-ignore */
 const LightFont = styled.h3`
   margin: 0;
   opacity: 0.5;
@@ -62,7 +61,7 @@ const Author = styled.p`
   font-size: 0.875rem;
   font-weight: 300;
 `;
-/* prettier-ignore */
+
 const Button = styled.button`
   padding: 0;
   margin-right: 0.8rem;
@@ -95,7 +94,7 @@ const Spinner = styled.div`
 
 const CardBook = (props) => {
   const {
-    id, category, author, title,
+    id, category, author, name,
   } = props;
 
   const dispatch = useDispatch();
@@ -104,12 +103,17 @@ const CardBook = (props) => {
       <Container>
         <div style={{ textAlign: 'left' }}>
           <LightFont bold>{category}</LightFont>
-          <Title>{title}</Title>
+          <Title>{name}</Title>
           <Author>{author}</Author>
         </div>
         <div>
           <Button>Comments</Button>
-          <Button type="button" onClick={() => dispatch(removeBook(id))}>
+          <Button
+            type="button"
+            onClick={() => {
+              dispatch(removeBook(id));
+            }}
+          >
             Remove
           </Button>
           <Button>Edit</Button>
@@ -136,7 +140,7 @@ const CardBook = (props) => {
 CardBook.propTypes = {
   category: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };
 export default CardBook;
