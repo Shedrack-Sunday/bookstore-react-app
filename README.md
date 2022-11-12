@@ -11,8 +11,8 @@
 - CSS
 
 
-## Live Demo
-N/A
+## Image View:
+
 
 
 # Getting Started with Create React App
