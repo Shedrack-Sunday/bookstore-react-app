@@ -12,6 +12,8 @@
 
 
 ## Image View:
+![uyt](https://user-images.githubusercontent.com/50990925/201472330-c925fede-e07a-4b21-8671-17e33df94bae.png)
+
 
 
 
