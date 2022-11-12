@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
@@ -95,7 +94,7 @@ const Spinner = styled.div`
 
 const CardBook = (props) => {
   const {
-    id, category, author, title,
+    id, category, author, name,
   } = props;
 
   const dispatch = useDispatch();
@@ -104,7 +103,7 @@ const CardBook = (props) => {
       <Container>
         <div style={{ textAlign: 'left' }}>
           <LightFont bold>{category}</LightFont>
-          <Title>{title}</Title>
+          <Title>{name}</Title>
           <Author>{author}</Author>
         </div>
         <div>
@@ -141,7 +140,7 @@ const CardBook = (props) => {
 CardBook.propTypes = {
   category: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };
 export default CardBook;
